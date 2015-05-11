@@ -1,2 +1,2 @@
 # BSID
-Bayesian System IDentification 
+Bayesian System IDentification Toolbox
