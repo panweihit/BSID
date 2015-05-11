@@ -6,7 +6,8 @@ IEEE Transaction on Automatic Control, 2015 (to appear). arXiv:1408.3549
 http://arxiv.org/abs/1408.3549
 
 It should be noted that this is a vanilla implementation for demo purposes.
-You have to download CVX toolbox from cvxr.com to ues this code.
+You have to download CVX toolbox from 
+www.cvxr.com to use this code.
 
 Efficient implementation will come soon!
 
