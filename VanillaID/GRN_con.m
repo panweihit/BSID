@@ -1,6 +1,7 @@
-function [y, A,w_true] = GRN_con(which)
+function [y, A,w_true] = GRN_con(which, noise)
 % clear all;
 % which =1;
+% noise = 0.1;
 %%
 ga1=0.3;ga2=0.4;ga3=0.5;ga4=0.2;ga5=0.4;ga6=0.6;
 be1=1.4;be2=1.5;be3=1.6;
@@ -14,7 +15,7 @@ w_tru=[diag([-ga1,-ga2,-ga3,-ga4,-ga5,-ga6])+...
     [zeros(15,3);0 al2 0;0 0 al3;al1 0 0;zeros(30,3);] zeros(48,3)];
 tspan = [0:1:500];
 initial  = abs(rand(n,1));
-[t,x]=ode45(@(t,x) odefun(t,x,w_tru),tspan,initial);
+[t,x]=ode45(@(t,x) odefun(t,x,w_tru, noise),tspan,initial,noise);
 
 for k=1:length(x)-1
     if k==1
