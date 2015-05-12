@@ -9,6 +9,8 @@ It should be noted that this is a vanilla implementation for demo purposes.
 You have to download CVX toolbox from 
 www.cvxr.com to use this code.
 
+You can run run_main.m to start.
+
 Efficient implementation will come soon!
 
 Author: Wei Pan (w.pan11@imperial.ac.uk, panweihit@gmail.com)
