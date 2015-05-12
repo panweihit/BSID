@@ -26,13 +26,14 @@ function w_estimate = tac_reconstruction(Output, Dic, lambda,MAXITER)
 % ============= Version =============
 %   1.0 (Sep ?, 2012)
 %%
+
 delta = 1e-6;
 
 [M,N]=size(Dic);
 % initialisation of the variables
 U=ones(N, MAXITER);
 Gamma=zeros(N, MAXITER);
-Dic=zeros(N, MAXITER);
+UU=zeros(N, MAXITER);
 w_estimate=zeros(N, MAXITER);
 WWW=ones(N, MAXITER);
 fprintf(1, 'Finding a sparse feasible point using l1-norm heuristic ...');
@@ -53,8 +54,8 @@ for iter=1:1:MAXITER
     WWW(:,iter)=W;
     Gamma(:,iter)=U(:,iter).^-1.*W;
     Dic0=lambda*eye(M)+Dic*diag(Gamma(:,iter))*Dic';
-    Dic(:, iter)=diag(Dic'*(Dic0\Dic));
-    U(:,iter+1)=abs(sqrt(Dic(:, iter)));
+    UU(:, iter)=diag(Dic'*(Dic0\Dic));
+    U(:,iter+1)=abs(sqrt(UU(:, iter)));
     
     for i=1:N
         if   w_estimate(i,iter).^2/norm(w_estimate(:,iter))^2<delta
@@ -63,4 +64,4 @@ for iter=1:1:MAXITER
     end
      
 end
-end
+
