@@ -1,4 +1,4 @@
-This is an implemetation of the follwing paper
+This is an implemetation of the following paper
 
 W.Pan, Y. Yuan, J. Goncalves, and G.-B. Stan, 
 A Sparse Bayesian Approach to the Identification of Nonlinear State-Space Systems, 
