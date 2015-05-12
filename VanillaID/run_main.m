@@ -3,7 +3,9 @@ clear all;
 close all;
 
 which = 1;
-[y, A, w_true] = GRN_dis(which);
+noise = 0.01; % standard deviation of the noise
+[y, A, w_true] = GRN_dis(which,noise);
+% [y, A, w_true] = GRN_con(which);
 
 w_lasso = lasso(A,y);
 w_lasso = w_lasso(:,end);
