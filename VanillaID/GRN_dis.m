@@ -21,7 +21,7 @@ Y=zeros(M,6);
 samplerate = 1;
 for k=2:T %real time from 0:1:50
     %call hill function:H
-    Phi(k-1,:)=[X(k-1,:) H(X(k-1,:),1) H(X(k-1,:),2) H(X(k-1,:),3) H(X(k-1,:),4)];
+    Phi(k-1,:)=[X(k-1,:) hill(X(k-1,:),1) hill(X(k-1,:),2) hill(X(k-1,:),3) hill(X(k-1,:),4)];
     X(k,:)=X(k-1,:) + samplerate*Phi(k-1,:)*w_tru + lam*randn(1,6);
     Y(k-1,:)=  (X(k,:)-X(k-1,:))/samplerate; %M rows, derivative of x
 end
