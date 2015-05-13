@@ -7,6 +7,6 @@ W.Pan, Y. Yuan, J. Goncalves, and G.-B. Stan, A Sparse Bayesian Approach to the 
 
 2. DistriID is a distributed implementation of the above Vanilla version.
 
-It's recommended that you use this code:
+It's recommended that you use this toolbox, you can choose one or the other of 'solver = {'cvx','admm'}'
 
 
