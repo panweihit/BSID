@@ -1,6 +1,6 @@
 % startup script to make Matlab aware of the package
 %
-% (c) by Wei Pan, w.pan11@imperial.ac.uk, panweihit@gmail.com
+% (c) by Wei Pan, w.pan11@imperial.ac.uk, 2014 Mar 3
 clear all;
 clc;
 close all;
@@ -17,12 +17,12 @@ addpath([mydir,'demo'])
 addpath([mydir,'solver'])
 addpath([mydir,'subfunction'])
 addpath([mydir,'inf'])
-if strcmp(computer, 'GLNXA64')
-    run('cvx/cvx-a64/cvx_setup')
-elseif strcmp(computer, 'PCWIN64')
-    run('cvx\cvx-w64\cvx_setup')
-elseif strcmp(computer, 'MACI64')
-    run('cvx/cvx-m64/cvx_setup')
-end
+% if strcmp(computer, 'GLNXA64')
+%     run('../cvx/cvx-a64/cvx_setup')
+% elseif strcmp(computer, 'PCWIN64')
+%     run('..\cvx\cvx-w64\cvx_setup')
+% elseif strcmp(computer, 'MACI64')
+%     run('../cvx/cvx-m64/cvx_setup')
+% end
 
 clear me mydir
