@@ -11,6 +11,11 @@ if strcmp(distributed_onoff,'on')
     parpool(15);
 end
 
+solver = {'cvx','admm'};
+% example = 'Kuramoto'
+% example = 'Repressilator'
+example = 'random'
+
 %dimension of the each block you want to put
 parameter.dimblock = 1000;
 % threshold for using centralised algorithm even distributed_onoff is 'on'
@@ -34,10 +39,6 @@ parameter.scale_w = 1e0;
 parameter.diff_onoff = 'off';
 parameter.MAX_ITER_Reweight = 5;
 
-solver = {'cvx','admm'};
-% example = 'Kuramoto'
-% example = 'Repressilator'
-example = 'random'
 
 % proportion for traning set and test set.
 %5/10 means half for training and half for testing
