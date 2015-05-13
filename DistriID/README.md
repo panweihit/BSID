@@ -2,19 +2,19 @@ This folder contains the distributed implementation of the System Identification
 
 Boyd, Stephen, et al. "Distributed optimization and statistical learning via the alternating direction method of multipliers." Foundations and Trends® in Machine Learning 3.1 (2011): 1-122.
 
-===================================== quick guide to start =================================
+==================== quick guide to start ===========================
 
 1. Download CVX toolbox from www.cvxr.com and run 'cvx_setup.m' to install the toolbox.
 2. Run 'start_up.m' to the toolbox to your directory
 3. RUN 'RUN_DistriID.m' and have fun!
 
-==================== guidience on the the use Parallel Computing Toolbox in Matlab =============== 
+============ guidience on the the use Parallel Computing Toolbox in Matlab =============== 
 Use     
 parpool(numberofcluster);
 delete(gcp);
 to start or delete multicluster
 
-========================================= Acknoledgement ====================================
+=============== Acknoledgement ===============
 
 1. The four files in folder 'inf' are implenmted by Dr Hannes Nickisch
 http://hannes.nickisch.org/
