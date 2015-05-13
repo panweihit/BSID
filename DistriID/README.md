@@ -11,8 +11,7 @@ Boyd, Stephen, et al. "Distributed optimization and statistical learning via the
 ============ guidience on the the use Parallel Computing Toolbox in Matlab =============== 
 
 Use     
-parpool(numberofcluster);
-delete(gcp);
+parpool(numberofcluster); or delete(gcp);
 to start or delete multicluster
 
 =============== Acknoledgement ===============
