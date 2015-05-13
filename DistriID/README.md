@@ -21,11 +21,8 @@ http://hannes.nickisch.org/
 http://hannes.nickisch.org/code/glm-ie/doc/index.html
 
 2. dwl1.m and wl1.m are implmemetated based on 
-
 http://web.stanford.edu/~boyd/papers/admm/lasso/lasso.html
-
 and 
-
 http://web.stanford.edu/~boyd/papers/admm/group_lasso/group_lasso_feat_split.html
 
 
