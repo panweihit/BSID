@@ -1,6 +1,6 @@
 This folder contains the distributed implementation of the System Identification Algorithm which can be found for the "vanilla" version. The distributed implementation is based on the following paper
 
-Boyd, Stephen, et al. "Distributed optimization and statistical learning via the alternating direction method of multipliers." Foundations and Trends® in Machine Learning 3.1 (2011): 1-122.
+Boyd, Stephen, et al. "Distributed optimization and statistical learning via the alternating direction method of multipliers." Foundations and Trends in Machine Learning 3.1 (2011): 1-122.
 
 ==================== quick guide to start ===========================
 
@@ -21,8 +21,11 @@ http://hannes.nickisch.org/
 http://hannes.nickisch.org/code/glm-ie/doc/index.html
 
 2. dwl1.m and wl1.m are implmemetated based on 
+
 http://web.stanford.edu/~boyd/papers/admm/lasso/lasso.html
+
 and 
+
 http://web.stanford.edu/~boyd/papers/admm/group_lasso/group_lasso_feat_split.html
 
 
