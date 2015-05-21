@@ -10,9 +10,11 @@ Boyd, Stephen, et al. "Distributed optimization and statistical learning via the
 
 ============ guidience on the the use Parallel Computing Toolbox in Matlab =============== 
 
-Use     
+In Matlab 2015, use     
 parpool(numberofcluster); or delete(gcp);
 to start or delete multicluster
+
+In previous version, check it on MathWorks Website
 
 =============== Acknoledgement ===============
 
