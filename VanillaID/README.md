@@ -11,6 +11,8 @@ www.cvxr.com to use this code.
 
 You can run run_main.m to start.
 
-Efficient implementation will come soon!
+Efficient implementation is in DistriID.
+
+It should be highly noted that $\lambda$ should be tuned!
 
 Author: Wei Pan (w.pan11@imperial.ac.uk, panweihit@gmail.com)
