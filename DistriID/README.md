@@ -1,6 +1,6 @@
-This folder contains the distributed implementation of the System Identification Algorithm which can be found for the "vanilla" version. The distributed implementation is based on the following paper
+This folder implements the following paper
 
-Boyd, Stephen, et al. "Distributed optimization and statistical learning via the alternating direction method of multipliers." Foundations and Trends in Machine Learning 3.1 (2011): 1-122.
+W. Pan, A. Sootla, and G.-B. Stan. Distributed Reconstruction of Nonlinear Networks: An ADMM Approach. The International Federation of Automatic Control. Cape Town, South Africa, 2014.
 
 ==================== Quick Guide to Start ===========================
 
