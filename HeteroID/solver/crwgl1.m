@@ -122,7 +122,7 @@ for iter=1:1:MAX_ITER_Reweight
         %     cvx_solver SDPT3
         variable v(Doblcok_tmp,Noblock_tmp)
         %     minimize    (lambda*sum(f.*norms( v, 2 ,1 )')+ 0.5*sum_square(A* vec(v)-y) )
-        minimize    (2*sum(f.*norms( v, 2 ,1 )')+ 1/lambda*sum_square(A* vec(v)-y) )
+        minimize    (lambda*sum(f.*norms( v, 2 ,1 )')+ 1/2*sum_square(A* vec(v)-y) )
         %                      subject to
         
         cvx_end
