@@ -1,7 +1,6 @@
 % Result in the paper
 clear all;
 close all;
-%clc;
 
 replicate = 10; T = 103; 
 
