@@ -1,11 +1,11 @@
 %% Attention
-% If you want to run PaperFigure.m, comment the following script, otherwise uncomment to run standalon example 
+% If you want to run PaperFigure.m, comment the following line, otherwise uncomment to run standalone example 
 % close all; clear all; which_var = 4; processnoisestd = 0.0; measurementnoisestd = 0.0; replicate = 10; T = 103; 
 
 
 %% Simulated Example and Settings
 run('config.m')
-parameter.T = T;%round(101/parameter.prop); % length of a single time series
+parameter.T = T; % length of a single time series
 parameter.replicate = replicate;  %number of experiments/conditions/pertubations/replicates; 
                            %when replicate = 1, the algorithm is consistent with our TAC 2016 paper
 which_var = which_var;  % Specify which gene you are interested in. 
