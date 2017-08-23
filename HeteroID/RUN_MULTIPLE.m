@@ -1,6 +1,8 @@
-%% Attention 
+%% Attention
 % If you want to run PaperFigure.m, comment the following script, otherwise uncomment to run standalon example 
- close all; clear all; which_var = 4; processnoisestd = 0.0; measurementnoisestd = 0.0; replicate = 10; T = 103; 
+% close all; clear all; which_var = 4; processnoisestd = 0.0; measurementnoisestd = 0.0; replicate = 10; T = 103; 
+
+
 %% Simulated Example and Settings
 run('config.m')
 parameter.T = T;%round(101/parameter.prop); % length of a single time series
