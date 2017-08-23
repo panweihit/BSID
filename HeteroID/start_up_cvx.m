@@ -7,7 +7,7 @@ close all;
 
 
 disp(['executing Wei Pan-Multiple Toobox startup script...']);
-fprintf('You are using Bayesian System Identification toolbox for Multiple Dataset')
+fprintf('You are using Bayesian System Identification toolbox for Multiple Dataset \n')
 me = mfilename;                                            
 mydir = which(me); mydir = mydir(1:end-2-numel(me));      
 
