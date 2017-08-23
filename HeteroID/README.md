@@ -1,6 +1,6 @@
 This folder implements the following paper
 
-W. Pan, Y. Yuan, L. Ljung, J. Goncalves, and G.-B. Stan. Identifying Biochemical Reaction Networks from Heterogeneous Datasets. IEEE Transactions on Control of Network Systems. 2017. (Conditionally Accepted)
+W. Pan, Y. Yuan, L. Ljung, J. Goncalves, and G.-B. Stan. Identification of Nonlinear State-Space Systems from Heterogeneous Datasets. IEEE Transactions on Control of Network Systems. 2017. (Conditionally Accepted)
 
 ==================== Quick Guide to Start ===========================
 
