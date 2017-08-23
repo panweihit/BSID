@@ -1,9 +1,6 @@
 % Result in the paper
 clear all;
 close all;
-%clc;
-load rnmse_w_iter_1_noiseless.mat
-load rnmse_w_iter_end_noiseless.mat
 
 processnoisestd = 0.0; measurementnoisestd = 0.0;
 
@@ -46,7 +43,7 @@ t_paperfigure_end = toc(t_paperfigure_start);
 
 %%
 
-% Plot the figure in the paper
+%% Plot the figure in the paper
 clear all;
 close all;
 
