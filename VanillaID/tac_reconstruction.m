@@ -36,7 +36,7 @@ Gamma=zeros(N, MAXITER);
 UU=zeros(N, MAXITER);
 w_estimate=zeros(N, MAXITER);
 WWW=ones(N, MAXITER);
-fprintf(1, 'Finding a sparse feasible point using l1-norm heuristic ...');
+fprintf(1, 'Finding a sparse feasible point using l1-norm heuristic ...\n');
 
 for iter=1:1:MAXITER
     
@@ -52,7 +52,7 @@ for iter=1:1:MAXITER
     
     w_estimate(:,iter)=W;
     WWW(:,iter)=W;
-    Gamma(:,iter)=U(:,iter).^-1.*W;
+    Gamma(:,iter)=U(:,iter).^-1.*abs(W);
     Dic0=lambda*eye(M)+Dic*diag(Gamma(:,iter))*Dic';
     UU(:, iter)=diag(Dic'*(Dic0\Dic));
     U(:,iter+1)=abs(sqrt(UU(:, iter)));
@@ -64,4 +64,3 @@ for iter=1:1:MAXITER
     end
      
 end
-
